@@ -1,7 +1,8 @@
 const { Product } = require("../models/product");
+
 const createProduct = async(product) => Product.create(product);
 
-const createAllProduct = async () => {
+const createAllProducts = async () => {
     const productsToAdd = [
         {
             nombre: 'Dunkerque',
